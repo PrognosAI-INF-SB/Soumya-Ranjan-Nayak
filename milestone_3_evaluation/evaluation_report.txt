@@ -1,0 +1,62 @@
+================================================================================
+MODEL EVALUATION REPORT - MILESTONE 3
+================================================================================
+
+Generated: 2025-10-29 16:43:26
+Model Path: C:\Users\soumy\OneDrive\Desktop\AI-PrognosAI\milestone_2_model_training\saved_models\lstm_rul_model_FD001.h5
+Test Data: C:\Users\soumy\OneDrive\Desktop\AI-PrognosAI\milestone_1_data_preparation\processed_data\test_processed_FD001.csv
+Total Samples: 100
+
+--------------------------------------------------------------------------------
+OVERALL PERFORMANCE METRICS
+--------------------------------------------------------------------------------
+Root Mean Squared Error (RMSE): 22.4338
+Mean Squared Error (MSE):       503.2736
+Mean Absolute Error (MAE):      15.3672
+R² Score:                       0.7086
+Mean Absolute % Error (MAPE):   21.77%
+Maximum Error:                  93.7005
+
+--------------------------------------------------------------------------------
+THRESHOLD EVALUATION
+--------------------------------------------------------------------------------
+Predefined RMSE Threshold: 30.00
+Achieved RMSE:             22.4338
+Status: [PASSED] RMSE below threshold
+
+--------------------------------------------------------------------------------
+ERROR ANALYSIS
+--------------------------------------------------------------------------------
+Mean Error (Bias):        7.7298
+Std Dev of Errors:        21.0600
+Median Absolute Error:    9.8575
+95th Percentile Error:    48.8151
+
+WARNING: MODEL BIAS - Tendency to OVER-predict RUL
+
+--------------------------------------------------------------------------------
+PERFORMANCE BY RUL RANGE
+--------------------------------------------------------------------------------
+Range           Count      RMSE         MAE          Mean Error      Std Error   
+--------------------------------------------------------------------------------
+0-50            30         5.4470       4.3489       3.1258          4.4608      
+50-100          36         26.8544      19.2275      10.9467         24.5220     
+100-150         34         26.2766      21.0018      8.3861          24.9025     
+
+--------------------------------------------------------------------------------
+MODEL LIMITATIONS & INSIGHTS
+--------------------------------------------------------------------------------
+• Highest error in RUL range: 50-100 (RMSE: 26.8544)
+• Number of outlier predictions (>3σ): 2 (2.00%)
+• Early life (RUL>100) RMSE: 26.6608
+• Late life (RUL≤50) RMSE:   5.3706
+  → Model performs worse in early life predictions
+
+--------------------------------------------------------------------------------
+RECOMMENDATIONS
+--------------------------------------------------------------------------------
+• Address systematic bias through model calibration
+
+================================================================================
+END OF REPORT
+================================================================================

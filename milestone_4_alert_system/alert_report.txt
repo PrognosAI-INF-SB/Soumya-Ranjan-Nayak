@@ -1,0 +1,60 @@
+==========================================================================================
+MAINTENANCE ALERT SYSTEM REPORT - MILESTONE 4
+==========================================================================================
+
+Generated: 2025-10-29 17:07:29
+Total Engines Monitored: 100
+
+------------------------------------------------------------------------------------------
+ALERT THRESHOLD CONFIGURATION
+------------------------------------------------------------------------------------------
+Emergency Alert:  RUL <= 20 cycles
+Critical Alert:   RUL <= 50 cycles
+Warning Alert:    RUL <= 100 cycles
+Normal Operation: RUL >  100 cycles
+
+------------------------------------------------------------------------------------------
+ALERT SUMMARY
+------------------------------------------------------------------------------------------
+Emergency Alerts:    9 (  9.0%)
+Critical Alerts:    24 ( 24.0%)
+Warning Alerts:     22 ( 22.0%)
+Normal Operations:  45 ( 45.0%)
+
+==========================================================================================
+EMERGENCY ALERTS - IMMEDIATE ACTION REQUIRED
+==========================================================================================
+
+Engine ID: 20
+  Predicted RUL:     17.60 cycles
+  Priority Score:    57.0/100
+  Confidence:        60.0%
+  Action Required:   IMMEDIATE ACTION REQUIRED: Ground aircraft and replace engine. Estimated RUL: 18 cycles.
+
+Engine ID: 31
+  Predicted RUL:     14.19 cycles
+  Priority Score:    57.0/100
+  Confidence:        60.0%
+  Action Required:   IMMEDIATE ACTION REQUIRED: Ground aircraft and replace engine. Estimated RUL: 14 cycles.
+
+Engine ID: 34
+  Predicted RUL:     7.31 cycles
+  Priority Score:    57.0/100
+  Confidence:        60.0%
+  Action Required:   IMMEDIATE ACTION REQUIRED: Ground aircraft and replace engine. Estimated RUL: 7 cycles.
+
+Engine ID: 35
+  Predicted RUL:     10.81 cycles
+  Priority Score:    57.0/100
+  Confidence:        60.0%
+  Action Required:   IMMEDIATE ACTION REQUIRED: Ground aircraft and replace engine. Estimated RUL: 11 cycles.
+
+Engine ID: 42
+  Predicted RUL:     11.14 cycles
+  Priority Score:    57.0/100
+  Confidence:        60.0%
+  Action Required:   IMMEDIATE ACTION REQUIRED: Ground aircraft and replace engine. Estimated RUL: 11 cycles.
+
+==========================================================================================
+END OF ALERT REPORT
+==========================================================================================
